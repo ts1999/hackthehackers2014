@@ -3,15 +3,16 @@ hackthehackers2014
 
 repo for hack the hackers 2014 hackathon
 
-Subprojects:
+Current status:
+	Unable to access anything related to filesystem from content extension, so, placeholders for now.
+	May have content extension rewrite urls to be externalized, and then handle that from another extension.
+	
+	Firefox profile bundles work.
 
- - Extension to launch external profile helper
- - Customized profile bundle that has mini-tor helper
-
-
-How to open on OSX:
-https://bugzilla.mozilla.org/show_bug.cgi?id=307463
-/usr/bin/open -a <app-bundle> --args <arguments>
-(May also be able to use start on windows machines)
-May be able to parse path:
-https://developer.mozilla.org/en-US/Add-ons/Code_snippets/Running_applications
+Features:
+	Creates semi-temporary firefox profile, using the -profile parameter from native firefox binary, using external helper program.
+	Intercepts navigation to different pages, and redirects to external instances of firefox.
+	
+	Each time a profile is activated, files may be wiped and regenerated, to anonymize browsing.
+	
+	
