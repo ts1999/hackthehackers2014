@@ -15,4 +15,5 @@ Features:
 	
 	Each time a profile is activated, files may be wiped and regenerated, to anonymize browsing.
 	
+	Connects to facebook over tor
 	
